@@ -1,10 +1,10 @@
-/*jshint unused:false */
+'use strict';
 
 function privateFunction() {
   return 1;
 }
 
-var privateState = 1;
+var privateState = 1; // eslint-disable-line no-unused-vars
 
 var PublicObj = {
   num: 1,

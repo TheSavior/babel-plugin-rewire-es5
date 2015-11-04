@@ -1,3 +1,5 @@
+/* eslint-env mocha */
+
 'use strict';
 
 process.env.NODE_ENV = 'test';
@@ -8,8 +10,6 @@ var sinon = require('sinon');
 sinon.assert.expose(chai.assert, {
   prefix: ''
 });
-
-global.assert = chai.assert;
 
 before(function() {
   require("babel-core/register");

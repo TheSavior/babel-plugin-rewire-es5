@@ -1,7 +1,7 @@
 'use strict';
 
 var sinon = require('sinon');
-var globalRewire = require('../../');
+var assert = require('chai').assert;
 
 describe('babel-plugin-rewire-es5', function() {
   it('should let you require a file', function() {
