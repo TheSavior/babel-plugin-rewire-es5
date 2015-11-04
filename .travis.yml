@@ -1,0 +1,17 @@
+language: node_js
+script: npm test
+node_js:
+- node
+- 4
+- '0.12'
+notifications:
+  email: false
+deploy:
+  provider: npm
+  email: npm@eli-white.com
+  api_key:
+    secure: EqOFLc1XdSOSCvq62+yCGKMyfvfeXSEsNfhQ+c9tqMIm2Nk1ick/bUvfYgXtwIhRF6lRoVd/9aLKrBFsTt1ficTW6PfgGcP+T/+9z1kVz17lloThoK27o2gd0Y3vbqxqqXlvVRHPtmCtAqw7DQ4MYNLW89eLCjt0K8sH5cNzHrh9CC1LTEIFq+owu+VkcIh8gEUoU+qP0/TOTXXQGTJck6ysEq+updtGoftnobT36K+XXKH+QfjEk4L4yVMHHtBierwycMhtQkEZ1ECfMwQpYHvE0Z27rjCPVYuLHenyM1BrmDLERp7HoTOGx2s+Jrpn7lzRgfKU/D7agVhu+PFB2x8A8oettHFJRuhy44Y8DGuXc1xVujWPc1zOOwKohkVCEO1NDlAYHFnXt+VhEoCldoM2GrItCa+q4jPlScEc2UuM4DgxIUvGdleogD0v4/qzRUXbTHxgOItBjJVg8hBjcydJ+O8xtE914n78zgLh3CQBNZxXXCjkwOZu834QIvCPWRlVTPhGHYJhKob8U6zGc1QgKVIumlif8cH8fkfVxoO6mCB/wStJIVrH6VNWI0JsEQM/5VJTszAvSAR429Dndrv8terVwhyVvvlVl1XLpXHO8G9FLn2OMudwyDej9TQvLSiq4R5M6drXMrP/cHYeIbt7WINdh0THfrz/wHu+YQQ=
+  on:
+    tags: true
+    repo: TheSavior/babel-plugin-rewire-es5
+    node: '0.12'
