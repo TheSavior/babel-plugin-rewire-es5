@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-rewire-es5",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hook rewire into every required package via babel.",
   "main": "index.js",
   "author": "Eli White <github@eli-white.com> (http://eli-white.com)",
