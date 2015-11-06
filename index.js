@@ -1,7 +1,5 @@
 'use strict';
 
-var template = require('babel-template');
-
 var __get__ = require('rewire/lib/__get__').toString();
 var __set__ = require('rewire/lib/__set__').toString();
 
@@ -13,14 +11,15 @@ var embed = "\nif (typeof(module.exports) === 'object' || typeof(module.exports)
   exportSet +
 '}';
 
-var rewireFinalEmbed = template(embed);
+module.exports = function(babel) {
+  var Plugin = babel.Plugin;
+  var t = babel.types;
 
-module.exports = function() {
-  return {
+  return new Plugin('rewire-es5', {
     visitor: {
       Program: function(path) {
-        path.pushContainer('body', rewireFinalEmbed());
+        path.body.push(t.literal(embed));
       }
     }
-  };
+  });
 };
