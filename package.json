@@ -17,13 +17,13 @@
     "rewire": "^2.3.4"
   },
   "devDependencies": {
-    "babel-core": "6.0.20",
-    "chai": "3.0.0",
-    "jscs": "2.5.0",
-    "jshint": "2.8.0",
-    "mocha": "2.2.5",
-    "sinon": "1.15.1",
-    "wealthfront-javascript": "2.4.0"
+    "babel-core": "6.18.0",
+    "chai": "3.5.0",
+    "jscs": "3.0.7",
+    "jshint": "2.9.4",
+    "mocha": "3.1.2",
+    "sinon": "1.17.6",
+    "wealthfront-javascript": "3.2.0"
   },
   "scripts": {
     "test": "mocha"
